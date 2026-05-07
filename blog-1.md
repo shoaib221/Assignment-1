@@ -143,7 +143,7 @@ if (typeof value === "number") {
 }
 ```
 
----
+
 
 ### 2. Using `instanceof`
 
@@ -153,7 +153,7 @@ if (value instanceof Date) {
 }
 ```
 
----
+
 
 ### 3. Using Custom Type Guards
 
