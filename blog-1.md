@@ -4,7 +4,9 @@
 
 In TypeScript, handling unpredictable data is a common challenge. Two special types often used for this purpose are `any` and `unknown`. Although both can store any kind of value, they behave very differently. Understanding the difference is important for writing safe and maintainable code.
 
-This article explains why `any` is considered a "type safety hole," why `unknown` is the safer alternative, and how **type narrowing** works in TypeScript.
+This article explains why `any` is considered a "type safety hole" and why `unknown` is the safer alternative, and how **type narrowing** works in TypeScript.
+
+
 
 ---
 
@@ -14,7 +16,6 @@ The `any` type disables TypeScript’s type checking completely.
 
 ```ts
 let value: any = "Hello";
-
 value.toUpperCase();
 value();
 value.notExistingProperty;
@@ -22,7 +23,7 @@ value.notExistingProperty;
 
 TypeScript allows all of these operations, even if they may cause runtime errors.
 
-### Why is `any` called a "type safety hole"?
+## Why is `any` called a "type safety hole"?
 
 Because it removes the protection TypeScript normally provides.
 
@@ -47,6 +48,9 @@ As a result:
 
 That is why developers call it a **type safety hole**.
 
+
+
+
 ---
 
 ## What is `unknown`?
@@ -61,7 +65,7 @@ value.toUpperCase(); // Error
 
 TypeScript forces you to verify the type first.
 
----
+
 
 ## Why is `unknown` safer?
 
@@ -84,11 +88,14 @@ Advantages of `unknown`:
 - Keeps TypeScript’s type safety active
 - Makes code easier to maintain
 
+
+
+
 ---
 
-## Understanding Type Narrowing
 
-### What is Type Narrowing?
+
+## What is Type Narrowing?
 
 Type narrowing means reducing a broad type into a more specific type using checks.
 
@@ -121,6 +128,8 @@ value: string
 ```
 
 Inside that block, string methods become available safely.
+
+
 
 ---
 
@@ -158,6 +167,9 @@ if (isString(value)) {
 }
 ```
 
+
+
+
 ---
 
 ## `any` vs `unknown`
@@ -168,6 +180,8 @@ if (isString(value)) {
 | Type safety | ❌ | ✅ |
 | Requires checking before use | ❌ | ✅ |
 | Recommended for unpredictable data | ❌ | ✅ |
+
+
 
 ---
 
