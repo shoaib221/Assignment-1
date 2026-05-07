@@ -1,10 +1,10 @@
 # How Generics Help Build Reusable and Strictly Typed Code
 
+---
+
 ## Introduction
 
-In TypeScript, Generics allow developers to create reusable components, functions, and classes that work with different data types while still preserving type safety.
-
-Instead of writing separate code for strings, numbers, objects, and arrays, Generics allow one implementation to adapt dynamically to the provided type.
+In TypeScript, Generics allow developers to create reusable components, functions and classes that work with different data types while still preserving type safety. Instead of writing separate code for strings, numbers, objects and arrays, Generics allow one implementation to adapt dynamically to the provided type.
 
 ---
 
@@ -212,6 +212,4 @@ printLength(123); // Error
 
 ## Conclusion
 
-Generics are one of TypeScript’s most powerful features. They allow developers to build reusable functions and components while maintaining strict type safety.
-
-Unlike `any`, Generics preserve type information and help catch errors during development, making applications more reliable and maintainable.
+Generics are one of TypeScript’s most powerful features. They allow developers to build reusable functions and components while maintaining strict type safety.  Generics preserve type information and help catch errors during development, making applications more reliable and maintainable.

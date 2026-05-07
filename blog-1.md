@@ -1,4 +1,6 @@
-# Why `any` is Called a Type Safety Hole and Why `unknown` is Safer - Explanation of the concept of the type narrowing
+# Why `any` is Called a Type Safety Hole and Why `unknown` is Safer ? Explanation of the concept of the type narrowing
+
+---
 
 ## Introduction
 
