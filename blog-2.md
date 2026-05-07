@@ -210,7 +210,7 @@ printLength(123); // Error
 
 
 
-# Conclusion
+## Conclusion
 
 Generics are one of TypeScript’s most powerful features. They allow developers to build reusable functions and components while maintaining strict type safety.
 
